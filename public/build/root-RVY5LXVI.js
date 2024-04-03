@@ -5,7 +5,8 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration
-} from "/build/_shared/chunk-JYITDDNW.js";
+} from "/build/_shared/chunk-NEH4KA36.js";
+import "/build/_shared/chunk-GIAAE3CH.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XU7DNSPJ.js";
@@ -13,14 +14,13 @@ import {
   createHotContext
 } from "/build/_shared/chunk-7HCAVLRA.js";
 import "/build/_shared/chunk-UWV35TSL.js";
-import "/build/_shared/chunk-GIAAE3CH.js";
 import "/build/_shared/chunk-BOXFZXVX.js";
 import {
   __toESM
 } from "/build/_shared/chunk-PNG5AS42.js";
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-5OX6XYUK.css";
+var tailwind_default = "/build/_assets/tailwind-KS7ERXU2.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
@@ -120,4 +120,4 @@ export {
   App as default,
   links
 };
-//# sourceMappingURL=/build/root-ZM27V4WX.js.map
+//# sourceMappingURL=/build/root-RVY5LXVI.js.map

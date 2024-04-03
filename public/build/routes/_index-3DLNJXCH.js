@@ -1,6 +1,7 @@
 import {
   Link
-} from "/build/_shared/chunk-JYITDDNW.js";
+} from "/build/_shared/chunk-NEH4KA36.js";
+import "/build/_shared/chunk-GIAAE3CH.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XU7DNSPJ.js";
@@ -8,7 +9,6 @@ import {
   createHotContext
 } from "/build/_shared/chunk-7HCAVLRA.js";
 import "/build/_shared/chunk-UWV35TSL.js";
-import "/build/_shared/chunk-GIAAE3CH.js";
 import "/build/_shared/chunk-BOXFZXVX.js";
 import {
   __toESM
@@ -33,7 +33,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/_index.tsx"
   );
-  import.meta.hot.lastModified = "1710517758383.5527";
+  import.meta.hot.lastModified = "1712090582818.244";
 }
 var meta = () => {
   return [{
@@ -45,24 +45,24 @@ var meta = () => {
 };
 function Index() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", { id: "content", className: "flex flex-col items-center h-screen py-6", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "text-4xl font-bold mb-4", children: "A better way to keeping track of your notes" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "text-4xl font-bold mb-4", children: "Home Page" }, void 0, false, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 32,
-      columnNumber: 9
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "text-lg mb-8", children: "Try our early beta and never lose track of your notes again!" }, void 0, false, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 33,
-      columnNumber: 9
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { id: "cta", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Link, { to: "/notes", className: "bg-gradient-to-r from-purple-600 to-purple-400 text-white py-2 px-4 rounded-full\n                hover:from-purple-700 hover:to-purple-500 transition duration-300 ease-in-out", children: "Try now" }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 35,
-      columnNumber: 13
+      lineNumber: 37,
+      columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 34,
-      columnNumber: 9
+      lineNumber: 36,
+      columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "app/routes/_index.tsx",
@@ -79,4 +79,4 @@ export {
   Index as default,
   meta
 };
-//# sourceMappingURL=/build/routes/_index-ADQXRGKD.js.map
+//# sourceMappingURL=/build/routes/_index-3DLNJXCH.js.map
