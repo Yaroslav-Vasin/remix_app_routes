@@ -3,18 +3,18 @@ import {
 } from "/build/_shared/chunk-ZWGWGGVF.js";
 import {
   RemixBrowser
-} from "/build/_shared/chunk-NEH4KA36.js";
+} from "/build/_shared/chunk-6T7CY2TE.js";
 import "/build/_shared/chunk-GIAAE3CH.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XU7DNSPJ.js";
 import {
+  require_react
+} from "/build/_shared/chunk-BOXFZXVX.js";
+import {
   createHotContext
 } from "/build/_shared/chunk-7HCAVLRA.js";
 import "/build/_shared/chunk-UWV35TSL.js";
-import {
-  require_react
-} from "/build/_shared/chunk-BOXFZXVX.js";
 import {
   __toESM
 } from "/build/_shared/chunk-PNG5AS42.js";
@@ -44,4 +44,4 @@ if (import.meta) {
     }, this)
   );
 });
-//# sourceMappingURL=/build/entry.client-B2LMSU7E.js.map
+//# sourceMappingURL=/build/entry.client-7XPYPNGA.js.map
