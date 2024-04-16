@@ -1,11 +1,10 @@
-// expenses/<some id>
 import ExpenseForm from "~/components/expenses/ExpensesForm";
 
-export default function UpdateExpensesPage() {
+// expenses/add
+export default function AddExpensesPage() {
   return (
     <>
       <ExpenseForm />
-      <h1>Update Expenses page</h1>
     </>
   );
 }

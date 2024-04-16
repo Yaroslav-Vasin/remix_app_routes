@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { FaArrowRight, FaDollarSign, FaChartBar } from "react-icons/fa";
 import { Link, Outlet } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
@@ -10,54 +11,46 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main id="content" className="flex flex-col items-center h-screen py-6">
-      <h1 className="text-4xl font-bold mb-4">Home Page</h1>
-      <p className="text-lg mb-8">
-        Try our early beta and never lose track of your notes again!
-      </p>
-      <p id="cta">
-        <Link
-          to="/notes"
-          className="bg-gradient-to-r from-purple-600 to-purple-400 text-white py-2 px-4 rounded-full
-                hover:from-purple-700 hover:to-purple-500 transition duration-300 ease-in-out"
-        >
-          Try now
-        </Link>
-      </p>
-      <Outlet />
+    <main>
+      <section className="my-24 mx-auto">
+        <header className="flex gap-8 items-center text-primary-50">
+          <FaDollarSign className="text-lg" />
+          <h2 className="m-0">A Central Space</h2>
+        </header>
+        <div className="flex gap-8 my-12">
+          <div className="w-1/2 rounded-lg shadow-lg p-2 bg-primary-100 flex justify-center items-center transform -rotate-5">
+            <img
+              className="w-full rounded-md"
+              src="images/expenses-management.jpg"
+              alt="A list of expenses."
+            />
+          </div>
+          <div className="w-1/2">
+            <p>Manage your expenses in one central place.</p>
+            <p>
+              <Link className="cta" to="/expenses">
+                <span>Get Started</span>
+                <FaArrowRight className="text-lg" />
+              </Link>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="marketing-section">
+        <header>
+          <FaChartBar />
+          <h2>Detailed Analytics</h2>
+        </header>
+        <div className="marketing-content">
+          <p className="marketing-explanation">
+            Benefit from best-in-class analytics to understand your spending
+            patterns.
+          </p>
+          <div className="marketing-image">
+            <img src="images/expenses-chart.jpg" alt="A demo bar chart." />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
-
-// export default function Index() {
-//   return (
-//     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-//       <h1>Welcome to Remix</h1>
-//       <ul>
-//         <li>
-//           <a
-//             target="_blank"
-//             href="https://remix.run/tutorials/blog"
-//             rel="noreferrer"
-//           >
-//             15m Quickstart Blog Tutorial
-//           </a>
-//         </li>
-//         <li>
-//           <a
-//             target="_blank"
-//             href="https://remix.run/tutorials/jokes"
-//             rel="noreferrer"
-//           >
-//             Deep Dive Jokes App Tutorial
-//           </a>
-//         </li>
-//         <li>
-//           <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-//             Remix Docs
-//           </a>
-//         </li>
-//       </ul>
-//     </div>
-//   );
-// }
