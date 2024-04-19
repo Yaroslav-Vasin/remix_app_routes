@@ -1,10 +1,12 @@
+import { Link } from "@remix-run/react";
+
 interface ExpenseListItemProps {
   title: string;
   amount: number;
-  // id: string;
+  id: string;
 }
 
-function ExpenseListItem({ title, amount }: ExpenseListItemProps) {
+function ExpenseListItem({ id, title, amount }: ExpenseListItemProps) {
   function deleteExpenseItemHandler() {
     // tbd
   }
@@ -17,7 +19,7 @@ function ExpenseListItem({ title, amount }: ExpenseListItemProps) {
       </div>
       <menu className="m-0 p-0 flex items-center gap-4">
         <button onClick={deleteExpenseItemHandler}>Delete</button>
-        <a href="tbd">Edit</a>
+        <Link to={id}>Edit</Link>
       </menu>
     </article>
   );

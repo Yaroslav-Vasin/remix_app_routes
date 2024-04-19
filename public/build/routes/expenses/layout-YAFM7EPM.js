@@ -1,4 +1,5 @@
 import {
+  Link,
   Outlet
 } from "/build/_shared/chunk-NEH4KA36.js";
 import "/build/_shared/chunk-GIAAE3CH.js";
@@ -33,9 +34,10 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/expenses/ExpenseListItem.tsx"
   );
-  import.meta.hot.lastModified = "1713215257857.5286";
+  import.meta.hot.lastModified = "1713278244611.011";
 }
 function ExpenseListItem({
+  id,
   title,
   amount
 }) {
@@ -45,7 +47,7 @@ function ExpenseListItem({
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", { className: "m-0", children: title }, void 0, false, {
         fileName: "app/components/expenses/ExpenseListItem.tsx",
-        lineNumber: 30,
+        lineNumber: 32,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { className: "m-0", children: [
@@ -53,33 +55,33 @@ function ExpenseListItem({
         amount.toFixed(2)
       ] }, void 0, true, {
         fileName: "app/components/expenses/ExpenseListItem.tsx",
-        lineNumber: 31,
+        lineNumber: 33,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/expenses/ExpenseListItem.tsx",
-      lineNumber: 29,
+      lineNumber: 31,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("menu", { className: "m-0 p-0 flex items-center gap-4", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("button", { onClick: deleteExpenseItemHandler, children: "Delete" }, void 0, false, {
         fileName: "app/components/expenses/ExpenseListItem.tsx",
-        lineNumber: 34,
+        lineNumber: 36,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "tbd", children: "Edit" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Link, { to: id, children: "Edit" }, void 0, false, {
         fileName: "app/components/expenses/ExpenseListItem.tsx",
-        lineNumber: 35,
+        lineNumber: 37,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/expenses/ExpenseListItem.tsx",
-      lineNumber: 33,
+      lineNumber: 35,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "app/components/expenses/ExpenseListItem.tsx",
-    lineNumber: 28,
+    lineNumber: 30,
     columnNumber: 10
   }, this);
 }
@@ -109,26 +111,16 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/expenses/ExpenseList.tsx"
   );
-  import.meta.hot.lastModified = "1713268957790.1316";
+  import.meta.hot.lastModified = "1713278105562.2947";
 }
 function ExpensesList({
   expenses
 }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("ol", { className: "w-1/2 mx-auto flex flex-col gap-4", id: "expenses-list", children: expenses.map((expense) => /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { className: "bg-gray-200 hover:bg-gray-300 px-8 rounded-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
-    ExpenseListItem_default,
-    {
-      title: expense.title,
-      amount: expense.amount
-    },
-    void 0,
-    false,
-    {
-      fileName: "app/components/expenses/ExpenseList.tsx",
-      lineNumber: 27,
-      columnNumber: 11
-    },
-    this
-  ) }, expense.id, false, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("ol", { className: "w-1/2 mx-auto flex flex-col gap-4", id: "expenses-list", children: expenses.map((expense) => /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { className: "bg-gray-200 hover:bg-gray-300 px-8 rounded-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(ExpenseListItem_default, { id: expense.id, title: expense.title, amount: expense.amount }, void 0, false, {
+    fileName: "app/components/expenses/ExpenseList.tsx",
+    lineNumber: 27,
+    columnNumber: 11
+  }, this) }, expense.id, false, {
     fileName: "app/components/expenses/ExpenseList.tsx",
     lineNumber: 26,
     columnNumber: 32
@@ -207,4 +199,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   ExpensesPage as default
 };
-//# sourceMappingURL=/build/routes/expenses/layout-5LEQXVXI.js.map
+//# sourceMappingURL=/build/routes/expenses/layout-YAFM7EPM.js.map

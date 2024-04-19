@@ -1,3 +1,5 @@
+import { Link } from "@remix-run/react";
+
 function ExpenseForm() {
   const today = new Date().toISOString().slice(0, 10); // yields something like 2023-09-10
 
@@ -44,9 +46,9 @@ function ExpenseForm() {
         <button className="bg-black text-white py-2 px-8 rounded-3xl hover:bg-gray-600">
           Save Expense
         </button>
-        <a className="text-gray-400 hover:text-gray-500" href="tbd">
+        <Link className="text-gray-400 hover:text-gray-500" to="..">
           Cancel
-        </a>
+        </Link>
       </div>
     </form>
   );

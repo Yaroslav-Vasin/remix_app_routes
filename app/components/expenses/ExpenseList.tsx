@@ -19,7 +19,7 @@ function ExpensesList({ expenses }: ExpensesListProps) {
           className="bg-gray-200 hover:bg-gray-300 px-8 rounded-full"
         >
           <ExpenseListItem
-            // id={expense.id}
+            id={expense.id}
             title={expense.title}
             amount={expense.amount}
           />

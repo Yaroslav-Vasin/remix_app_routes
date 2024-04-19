@@ -31,7 +31,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/marketing/PricingPlan.tsx"
   );
-  import.meta.hot.lastModified = "1713268784504.7852";
+  import.meta.hot.lastModified = "1713269775440.1777";
 }
 function PricingPlan({
   title,
@@ -172,4 +172,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   PricingPage
 };
-//# sourceMappingURL=/build/_shared/chunk-3ZHEPEPT.js.map
+//# sourceMappingURL=/build/_shared/chunk-Z3VWMORG.js.map

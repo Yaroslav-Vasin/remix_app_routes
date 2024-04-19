@@ -1,6 +1,11 @@
 import {
-  ExpensesForm_default
-} from "/build/_shared/chunk-GXUIL5I4.js";
+  ExpensesForm_default,
+  Modal_default
+} from "/build/_shared/chunk-RMFZLEKD.js";
+import {
+  useNavigate
+} from "/build/_shared/chunk-NEH4KA36.js";
+import "/build/_shared/chunk-GIAAE3CH.js";
 import {
   createHotContext
 } from "/build/_shared/chunk-7HCAVLRA.js";
@@ -27,24 +32,37 @@ if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
 }
 var prevRefreshReg;
 var prevRefreshSig;
+var _s = $RefreshSig$();
 if (import.meta) {
   import.meta.hot = createHotContext(
     //@ts-expect-error
     "app/routes/expenses/add/route.tsx"
   );
-  import.meta.hot.lastModified = "1713189955406.097";
+  import.meta.hot.lastModified = "1713279090391.9614";
 }
 function AddExpensesPage() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_jsx_dev_runtime.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ExpensesForm_default, {}, void 0, false, {
+  _s();
+  const navigate = useNavigate();
+  const closeHandler = () => {
+    navigate("..");
+  };
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_jsx_dev_runtime.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Modal_default, { onClose: closeHandler, children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ExpensesForm_default, {}, void 0, false, {
     fileName: "app/routes/expenses/add/route.tsx",
-    lineNumber: 26,
+    lineNumber: 35,
+    columnNumber: 9
+  }, this) }, void 0, false, {
+    fileName: "app/routes/expenses/add/route.tsx",
+    lineNumber: 34,
     columnNumber: 7
   }, this) }, void 0, false, {
     fileName: "app/routes/expenses/add/route.tsx",
-    lineNumber: 25,
+    lineNumber: 33,
     columnNumber: 10
   }, this);
 }
+_s(AddExpensesPage, "CzcTeTziyjMsSrAVmHuCCb6+Bfg=", false, function() {
+  return [useNavigate];
+});
 _c = AddExpensesPage;
 var _c;
 $RefreshReg$(_c, "AddExpensesPage");
@@ -53,4 +71,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   AddExpensesPage as default
 };
-//# sourceMappingURL=/build/routes/expenses/add/route-OTJYRPU7.js.map
+//# sourceMappingURL=/build/routes/expenses/add/route-XBVDHIAE.js.map
